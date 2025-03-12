@@ -1,5 +1,5 @@
 import { describe, expect, test} from "vitest"
-import { ComplexNumber } from "../src/entregable/complexnumber.ts"
+import { ComplexNumber } from "../../src/entregable/complexnumber.ts"
 
 const primer_numero = new ComplexNumber(2, 1);
 const segundo_numero = new ComplexNumber(5, 4);
