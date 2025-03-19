@@ -4,6 +4,7 @@ import { RationalNumber } from "../../src/entregable/rationalnumber.ts"
 const primer_numero = new RationalNumber(5,2);
 const segundo_numero = new RationalNumber(2,10);
 const tercer_numero = new RationalNumber(7,3);
+let cuarto_numero = new RationalNumber(3,4);
 
 describe("pruebas de la función add de números racionales", () => {
   test("primer_numero.add(segundo_numero) devuelve el número racional (27,10)", () => {
@@ -58,4 +59,15 @@ describe("pruebas de la función divide de números racionales", () => {
     test("tercer_numero.divide(segundo_numero) devuelve el número racional (35,3)", () => {
       expect(tercer_numero.divide(segundo_numero)).toStrictEqual(new RationalNumber(35,3));
     });
+});
+
+describe("pruebas de las funciónes setters", () => {
+    cuarto_numero.numerador = 5;
+    test("cuarto_numero.numerador devuelve el número 5", () => {
+      expect(cuarto_numero.numerador).toBe(5);
+    });
+    cuarto_numero.denominador = 2;
+    test("cuarto_numero.denominador devuelve el número 2", () => {
+        expect(cuarto_numero.denominador).toBe(2);
+      });
 });

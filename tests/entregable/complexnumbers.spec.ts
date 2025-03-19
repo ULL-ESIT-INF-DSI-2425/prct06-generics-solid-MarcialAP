@@ -4,6 +4,7 @@ import { ComplexNumber } from "../../src/entregable/complexnumber.ts"
 const primer_numero = new ComplexNumber(2, 1);
 const segundo_numero = new ComplexNumber(5, 4);
 const tercer_numero = new ComplexNumber(10, 2);
+let cuarto_numero = new ComplexNumber(20, 20);
 
 describe("pruebas de la función add de números complejos", () => {
   test("primer_numero.add(segundo_numero) devuelve el número complejo (7, 5)", () => {
@@ -75,4 +76,15 @@ describe("pruebas de la función divide de números complejos", () => {
       expect(tercer_numero.divide(segundo_numero)).toStrictEqual(new ComplexNumber(58/41, -30/41));
     });
     // c² + d² = 41
+});
+
+describe("pruebas de las funciónes setters", () => {
+    cuarto_numero.parte_real = 5;
+    test("cuarto_numero.parte_real devuelve el número 5", () => {
+      expect(cuarto_numero.parte_real).toBe(5);
+    });
+    cuarto_numero.parte_imaginaria = 2;
+    test("cuarto_numero.parte_imaginaria devuelve el número 2", () => {
+        expect(cuarto_numero.parte_imaginaria).toBe(2);
+      });
 });

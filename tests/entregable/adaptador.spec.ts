@@ -72,7 +72,6 @@ describe("pruebas de la función divide de números adaptados", () => {
   test("adaptado1.divide(primer_numero_complejo) devuelve el número complejo (5/104,-25/104)", () => {
     expect(adaptado1.divide(primer_numero_complejo)).toStrictEqual(new ComplexNumber(5/104,-25/104));
   });
-  // Parte divisoria: 104
   
   test("adaptado2.divide(primer_numero_complejo) devuelve el número complejo (6/104,-30/104)", () => {
     expect(adaptado2.divide(primer_numero_complejo)).toStrictEqual(new ComplexNumber(6/104,-30/104));
