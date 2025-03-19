@@ -1,4 +1,4 @@
-import { Arithmeticable } from "./arithmeticable";
+import { Arithmeticable } from "./arithmeticable.js";
 export class ComplexNumber implements Arithmeticable<ComplexNumber> {
     private _parte_real : number;
     private _parte_imaginaria : number;

@@ -1,4 +1,4 @@
-import { Arithmeticable } from "./arithmeticable";
+import { Arithmeticable } from "./arithmeticable.js";
 
 /**
  * class ArithmeticableCollection: Clase generica cuyo parametro está restringido a la forma definida por la interfaz Arithmeticable
